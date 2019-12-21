@@ -1,0 +1,15 @@
+[package]
+name = "csv-translator"
+version = "0.1.0"
+authors = ["Xidorn Quan <me@upsuper.org>"]
+edition = "2018"
+license = "GPL-3.0-or-later"
+publish = false
+
+[dependencies]
+anyhow = "1.0.25"
+csv = "1.1.1"
+itertools = "0.8.2"
+serde = { version = "1.0.104", features = ["derive"] }
+serde_yaml = "0.8.11"
+structopt = "0.3.5"
