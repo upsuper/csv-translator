@@ -75,7 +75,7 @@ fn parse_csv(path: &Path) -> Result<Vec<CsvColumn>> {
 
 fn densify_csv_columns(columns: &[CsvColumn]) -> Vec<DenseCsvColumn> {
     columns
-        .into_iter()
+        .iter()
         .map(|column| {
             let header = column.header.clone();
             let values = column.values.iter().filter(|s| !s.is_empty());
